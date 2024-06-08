@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  max-height: 100vh;
+  background-color: #674bb1;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 100px auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+.landing {
+  background-image: url(../images/bg-desktop.svg);
+  background-size: cover;
+  overflow: hidden;
+  min-height: 100vh;
+}
+@media (max-width: 991px) {
+  .landing {
+    background-image: url(../images/bg-mobile.svg);
+  }
+}
+.logo img {
+  width: 120px;
+  margin-bottom: 40px;
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 991px) {
+  .content {
+    flex-direction: column;
+  }
+}
+.content .image img {
+  width: 600px;
+  margin-right: 42px;
+}
+@media (max-width: 991px) {
+  .content .image img {
+    width: 350px;
+    display: block;
+    margin: auto;
+    margin-bottom: 58px;
+  }
+}
+.info {
+  position: relative;
+}
+@media (max-width: 991px) {
+  .info {
+    text-align: center;
+    margin: auto;
+  }
+}
+.info h2 {
+  color: white;
+  font-size: 32px;
+  font-weight: 600;
+  max-width: 360px;
+  margin-bottom: 22px;
+  margin-top: 30px;
+}
+@media (max-width: 991px) {
+  .info h2 {
+    font-size: 27px;
+    margin: 0 auto 20px;
+  }
+}
+.info p {
+  color: white;
+  font-size: 14px;
+  max-width: 440px;
+  margin-bottom: 25px;
+}
+@media (max-width: 991px) {
+  .info p {
+    width: 290px;
+    margin: 0 auto 20px;
+  }
+}
+.info a {
+  background-color: white;
+  color: #674bb1;
+  padding: 8px 32px;
+  border-radius: 30px;
+  font-size: 14px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+@media (max-width: 991px) {
+  .info a {
+    padding: 10px 72px;
+    font-size: 10px;
+  }
+}
+.info a:hover {
+  background-color: #e980e7;
+  color: white;
+}
+ul {
+  display: flex;
+  list-style: none;
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+}
+@media (max-width: 991px) {
+  .info ul {
+    position: absolute;
+    right: 50%;
+    bottom: -120px;
+    transform: translateX(50%);
+  }
+}
+ul li {
+  padding-left: 20px;
+}
+ul li i {
+  font-size: 16px;
+  color: white;
+  border-radius: 50%;
+  border: 1px solid white;
+  padding: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+ul li i:hover {
+  color: #e980e7;
+  border-color: #e980e7;
+}
+@media (max-width: 991px) {
+  ul li {
+    padding-left: 10px;
+  }
+  ul li i {
+    font-size: 10px;
+  }
+}
